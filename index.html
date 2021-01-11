@@ -23,36 +23,139 @@
     <title>Implementing Inclusive Design Patterns | Exercise </title>
   </head>
   <body>
-
-    <a href="#main" class="skip-to-main" >Skip to main content [keyboard users]</a>
+    <nav>
+      <a href="#" class="navigation-link"><span class="visually-hidden">Current page</span>Home</a>
+      <a href="#main"  class="navigation-link">Blog</a>
+      <a href="#" class="navigation-link">About</a>
+      <a href="#" class="navigation-link">Contact</a>
+    </nav>
+    <!-- <a href="#main" class="skip-to-main" >Skip to main content [keyboard users]</a> -->
     <!--Logo/page navigation, menu need to go there-->
-    <p><a class="media-link" href="#">Agathe's Github</a></p>
+
+    <!-- Table of content -->
+    <nav class="table-of-contents" role="navigation" aria-labelledby="contents-heading">
+      <h2 id="contents-heading">Contents</h2>
+      <ul>
+        <li><a href="#markup-article">How to Mark Up Inclusive Blog Article</a></li>
+        <li><a href="#quote-work">How to quote the work of others</a></li>
+        <li><a href="#jaws-read-article">JAWS Screen Readers announce "Article"</a></li>
+        <li><a href="#flesch-reading-ease">Use Flesch reading ease to test readability</a></li>
+        <li><a href="#headings-voiceover">How to Access Headings from VoiceOver on Mac</a></li>
+      </ul>
+    </nav>
     <!--Skip to main content (posts, products)- Unique content of the page-->
     <main id="main">
-      <h1>How to Mark Up Inclusive Blog Articles</h1>
+      <h1 id="markup-article">How to Mark Up Inclusive Blog Articles</h1>
       <div class="class">Published on <time datetime="2020-01-11">11/01/2020</time></div>
       <p><span class="visually-hidden">Subtitle:</span> In Seven Simple Steps</p>
-      <p>Subsection within the article should be h2 instead of < subsection>. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce lorem justo, volutpat id egestas sit amet, cursus id ex.
-      Praesent vitae scelerisque eros. Suspendisse fermentum felis et turpis egestas, luctus scelerisque arcu pretium.
-      Suspendisse faucibus diam dui, vitae tristique metus finibus in. Phasellus sem nunc, pretium euismod condimentum ac,
-      mollis quis nisi. Integer et ultricies metus. Aenean quis nibh aliquet, semper leo sit amet, vehicula sem. Aenean rutrum
-      libero et tincidunt vehicula. Maecenas cursus eget metus posuere porttitor. Proin non cursus nulla.</p>
+      <article>
+        <p>Subsection within the article should be h2 instead of < subsection>. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce lorem justo, volutpat id egestas sit amet, cursus id ex.
+        Praesent vitae scelerisque eros. Suspendisse fermentum felis et turpis egestas, luctus scelerisque arcu pretium.
+        Suspendisse faucibus diam dui, vitae tristique metus finibus in. Phasellus sem nunc, pretium euismod condimentum ac,
+        mollis quis nisi. Integer et ultricies metus. Aenean quis nibh aliquet, semper leo sit amet, vehicula sem. Aenean rutrum
+        libero et tincidunt vehicula. Maecenas cursus eget metus posuere porttitor. Proin non cursus nulla.</p>
 
-      <p>Proin in dui in ante hendrerit gravida a et ante. Aenean vehicula lobortis neque, non cursus neque consequat ut.
-      Curabitur luctus sodales libero, vitae posuere ex mollis vitae. Mauris semper, nisi rutrum gravida volutpat, justo orci
-      posuere magna, eu volutpat orci odio vel ligula. Suspendisse potenti. In eget massa a nisi imperdiet semper at nec
-      libero. Nulla id varius risus. Quisque venenatis auctor lectus sit amet aliquet. Aliquam posuere, justo in porta
-      suscipit, odio nulla viverra metus, eget interdum orci lectus quis felis. In eleifend, leo ut ullamcorper elementum,
-      neque velit sagittis lectus, eget convallis nisi justo et erat. Curabitur at commodo quam, sit amet mollis massa.
-      Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae;</p>
+        <!-- <img src="flower-bearpot.png" alt="Growing flower, blooming a bearpot"> -->
 
-      <p>Aenean euismod, magna vitae tincidunt maximus, nibh tortor malesuada est, ac lacinia neque turpis sed elit. Cras rutrum
-      tincidunt velit, non elementum mauris laoreet a. In vitae ex vel sem ultricies auctor non eu nibh. Duis mattis lorem nec
-      felis interdum, eget vehicula metus facilisis. Ut facilisis velit ac massa lacinia, quis porta nisi cursus. In mi
-      sapien, rhoncus in lacus vitae, bibendum sollicitudin nulla. Donec sagittis rhoncus dui et lobortis. Aliquam erat
-      volutpat. Aliquam fringilla quam ac ante consequat, id fermentum leo euismod. Nam ut posuere erat. Duis orci enim,
-      lobortis ac sapien pharetra, condimentum tincidunt justo. Sed rhoncus in risus tincidunt aliquam. Sed eu eros ut nunc
-      bibendum vestibulum.</p>
+        <p>Proin in dui in ante hendrerit gravida a et ante. Aenean vehicula lobortis neque, non cursus neque consequat ut.
+        Curabitur luctus sodales libero, vitae posuere ex mollis vitae. Mauris semper, nisi rutrum gravida volutpat, justo orci
+        posuere magna, eu volutpat orci odio vel ligula. Suspendisse potenti. In eget massa a nisi imperdiet semper at nec
+        libero. Nulla id varius risus. Quisque venenatis auctor lectus sit amet aliquet. Aliquam posuere, justo in porta
+        suscipit, odio nulla viverra metus, eget interdum orci lectus quis felis. In eleifend, leo ut ullamcorper elementum,
+        neque velit sagittis lectus, eget convallis nisi justo et erat. Curabitur at commodo quam, sit amet mollis massa.
+        Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae;
+        </p>
+      </article>
+
+      <h1 id="quote-work">How to quote the work of others</h1>
+      <div class="class">Published on <time datetime="2020-01-11">11/01/2020</time></div>
+      <p><span class="visually-hidden">Subtitle:</span> It needs the mention of their works by name, as well as the author's
+        name
+      </p>
+      <article>
+        <p>e.g. <a href="https://www.youtube.com/watch?v=XrUM8m2rnP0"><em>The Amazing Life of the Sloth</em></a> by National Geonapping, <a href="https://twitter.com/rickastley"><em>What Have I
+              done With My Life?</em></a> by Rick Astley, and <a href="https://www.google.com/search?q=jeff+bezos&source=lnms&tbm=isch&sa=X&ved=2ahUKEwjJxsHFmZTuAhXP5KQKHd9-CSYQ_AUoAXoECBEQAw&biw=1270&bih=1329"><em>How to Become a Billionaire</em></a> by Jeffie
+          Besos
+        </p>
+
+        <p>Mauris nibh eros, tincidunt sed libero sit amet, fringilla mollis ipsum. In maximus consequat erat vitae mattis.
+          Maecenas a sagittis neque, vel elementum massa. Integer quis turpis non mauris feugiat tempus. Etiam
+        fermentum, ex ac ullamcorper blandit, mi lacus interdum mauris, quis convallis lectus nulla non nulla. In eget nibh
+        augue.
+        </p>
+      </article>
+
+      <h1 id="jaws-read-article">JAWS Screen Readers announce "Article"</h1>
+      <div class="class">Published on <time datetime="2020-01-11">11/01/2020</time></div>
+      <p><span class="visually-hidden">Subtitle:</span> On Entering and Exiting the Element</p>
+      <article>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut ornare nibh sed ipsum efficitur consequat aliquam sit amet
+        risus. Nullam interdum, ex ut ornare posuere, magna sem venenatis magna, ac pharetra ipsum leo eget dui. Etiam ut nibh
+        imperdiet, ornare nisl nec, bibendum massa. Duis a auctor quam. Aliquam libero nisl, ultrices et dignissim et, posuere
+        et nibh. Sed eget dignissim mi, in tincidunt lectus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum
+        dapibus quam odio, nec semper turpis elementum in. Cras et sapien neque.</p>
+
+        <p>Mauris nibh eros, tincidunt sed libero sit amet, fringilla mollis ipsum. In maximus consequat erat vitae mattis. Nulla
+        in scelerisque neque. Proin laoreet tellus est, non commodo eros interdum a. Vestibulum tortor enim, convallis vitae
+        vulputate accumsan, hendrerit eu nunc. Nunc sit amet faucibus sapien. Sed lacinia fringilla justo, vitae scelerisque
+        nunc cursus vulputate. Quisque lacinia mi ipsum, ullamcorper ornare diam finibus vel. Curabitur a euismod nisi, eget
+        laoreet tortor. Suspendisse luctus augue non sagittis varius. Etiam elementum tristique tortor, sit amet fermentum magna
+        commodo tempor. Maecenas a sagittis neque, vel elementum massa. Integer quis turpis non mauris feugiat tempus. Etiam
+        fermentum, ex ac ullamcorper blandit, mi lacus interdum mauris, quis convallis lectus nulla non nulla. In eget nibh augue.</p>
+      </article>
+
+      <h1 id="flesch-reading-ease">Use Flesch reading ease to test readability</h1>
+      <div class="class">Published on <time datetime="2020-01-11">11/01/2020</time></div>
+      <p><span class="visually-hidden">Subtitle:</span> Also TRAY readability tool as a browser extension, otherwise readability-checker to install using npm i readability-checker -g, then point at a web page</p>
+      <article>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut ornare nibh sed ipsum efficitur consequat aliquam sit
+          amet
+          risus. Nullam interdum, ex ut ornare posuere, magna sem venenatis magna, ac pharetra ipsum leo eget dui. Etiam ut
+          nibh
+          imperdiet, ornare nisl nec, bibendum massa. Duis a auctor quam. Aliquam libero nisl, ultrices et dignissim et,
+          posuere
+          et nibh. Sed eget dignissim mi, in tincidunt lectus. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+          Vestibulum
+          dapibus quam odio, nec semper turpis elementum in. Cras et sapien neque.</p>
+
+        <p>Mauris nibh eros, tincidunt sed libero sit amet, fringilla mollis ipsum. In maximus consequat erat vitae mattis.
+          Nulla
+          in scelerisque neque. Proin laoreet tellus est, non commodo eros interdum a. Vestibulum tortor enim, convallis vitae
+          vulputate accumsan, hendrerit eu nunc. Nunc sit amet faucibus sapien. Sed lacinia fringilla justo, vitae scelerisque
+          nunc cursus vulputate. Quisque lacinia mi ipsum, ullamcorper ornare diam finibus vel. Curabitur a euismod nisi, eget
+          laoreet tortor. Suspendisse luctus augue non sagittis varius. Etiam elementum tristique tortor, sit amet fermentum
+          magna
+          commodo tempor. Maecenas a sagittis neque, vel elementum massa. Integer quis turpis non mauris feugiat tempus. Etiam
+          fermentum, ex ac ullamcorper blandit, mi lacus interdum mauris, quis convallis lectus nulla non nulla. In eget nibh
+          augue.</p>
+      </article>
+
+      <h1 id="headings-voiceover">How to Access Headings from VoiceOver on Mac</h1>
+      <div class="class">Published on <time datetime="2020-01-11">11/01/2020</time></div>
+      <p><span class="visually-hidden">Subtitle:</span> Enabling, then Control + Option + U
+      </p>
+      <article>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut ornare nibh sed ipsum efficitur consequat aliquam sit
+          amet
+          risus. Nullam interdum, ex ut ornare posuere, magna sem venenatis magna, ac pharetra ipsum leo eget dui. Etiam ut
+          nibh
+          imperdiet, ornare nisl nec, bibendum massa. Duis a auctor quam. Aliquam libero nisl, ultrices et dignissim et,
+          posuere
+          et nibh. Sed eget dignissim mi, in tincidunt lectus. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+          Vestibulum
+          dapibus quam odio, nec semper turpis elementum in. Cras et sapien neque.</p>
+
+        <p>Mauris nibh eros, tincidunt sed libero sit amet, fringilla mollis ipsum. In maximus consequat erat vitae mattis.
+          Nulla
+          in scelerisque neque. Proin laoreet tellus est, non commodo eros interdum a. Vestibulum tortor enim, convallis vitae
+          vulputate accumsan, hendrerit eu nunc. Nunc sit amet faucibus sapien. Sed lacinia fringilla justo, vitae scelerisque
+          nunc cursus vulputate. Quisque lacinia mi ipsum, ullamcorper ornare diam finibus vel. Curabitur a euismod nisi, eget
+          laoreet tortor. Suspendisse luctus augue non sagittis varius. Etiam elementum tristique tortor, sit amet fermentum
+          magna
+          commodo tempor. Maecenas a sagittis neque, vel elementum massa. Integer quis turpis non mauris feugiat tempus. Etiam
+          fermentum, ex ac ullamcorper blandit, mi lacus interdum mauris, quis convallis lectus nulla non nulla. In eget nibh
+          augue.</p>
+      </article>
     </main>
 
     <!--Insert JS script here-->
