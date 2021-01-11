@@ -45,13 +45,17 @@ main * + *:not(p) {
 }
 
 nav {
-  display: inline;
+  display: flex;
+  justify-content: space-evenly;
   background-color: #c8f7c5;
 }
 
 a.navigation-link {
+  justify-content: center;
+  font-size: 2em;
   color: #0e3041;
   padding: 0.2em;
+  text-decoration: none;
 }
 
 /* When the  tab is used (focus), we need to make sure there is a clear indication of focus, visually*/
