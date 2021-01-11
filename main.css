@@ -1,0 +1,56 @@
+[href="#main"] {
+  position: absolute;
+  top: 0;
+  right: 100%;
+}
+
+[href="#main"] {
+  right: auto;
+}
+
+html {
+  font-size: 100%;
+}
+
+main {
+  max-width: 60rem;
+  text-align: left;
+}
+
+/* Line height needs to be a unitless proportion, so when zoom in and out, ensure proportionate line height */
+p {
+  line-height: 1.5;
+}
+
+/* Media queries */
+
+/* We ensure inclusive measure within responsive layout - Here with a larger screen */
+@media (min-width: 120rem) {
+  html {
+    font-size: 150%;
+  }
+}
+
+/* link underlines - Underline should not intersect the form, it needs to leave the space for readability */
+.media-link, .skip-to-main {
+  color: #c8f7c5;
+  text-decoration: none;
+  text-shadow: 0.05em 0 0#0e3041, -0.05em 0 0 #0e3041,
+  0 0.05em 0 #0e3041, 0 -0.05em 0 #0e3041,
+  0.1em 0 0 #0e3041, -0.1em 0 0 #0e3041,
+  0 0.1em 0 #0e3041, 0 -0.1em 0 #0e3041;
+  background-position: bottom 0.05em center;
+  background-repeat: repeat-x;
+  background-size: 100% 0.05em;
+  background-image: linear-gradient(to right, currentColor 0%, currentColor 100%);
+}
+
+a:focus {
+  outline: none;
+  background-color:  #c8f7c5;
+  color: #0e3041;
+  text-shadow: 0.05em 0 0  #c8f7c5, -0.05em 0 0  #c8f7c5,
+  0 0.05em 0  #c8f7c5, 0 -0.05em 0  #c8f7c5,
+  0.1em 0 0  #c8f7c5, -0.1em 0 0  #c8f7c5,
+  0 0.1em 0  #c8f7c5, 0 -0.1em 0  #c8f7c5;
+}
