@@ -19,6 +19,7 @@ div.table-of-contents {
   margin-top: 0.5em;
   width: fit-content;
 }
+
 /* Ideal length width for readability is around 60rem */
 main {
   max-width: 60rem;
