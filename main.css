@@ -50,10 +50,24 @@ nav {
   background-color: #c8f7c5;
 }
 
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  }
+
 @media screen and (min-width: 200px) and (max-width: 640px) {
+  /* Make sure to display touch target in an easy way for mobile users - So they can easily touch the button they want withh enough space between buttons */
   nav {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    }
+    /* Resize images with mobile layout */
+    img {
+      width: 80%;
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
     }
   }
 
@@ -137,3 +151,74 @@ a:focus {
   overflow: hidden;
   clip: rect(1px, 1px, 1px, 1px);
 }
+
+#main-contact {
+  margin: 0 auto;
+}
+/*  */
+form {
+  border: #c8f7c5 2px solid;
+}
+h1.contact-title {
+  margin: 0 auto;
+  margin-top: 2rem;
+  width: 50%;
+}
+#contact-form {
+  grid-template-rows: 1fr 1fr;
+  width: 50%;
+  margin: 0 auto;
+  padding: 0 1em 1em 1em;
+}
+
+textarea#message {
+  height: 5rem;
+  width: 25rem;
+}
+
+.message-label-input {
+  display: grid;
+}
+
+button {
+  background-color: #c8f7c5;
+  color: #0e3041;
+  border: #0e3041 1px solid;
+  font-size: 1.5rem;
+  padding: 0.2em 0.5em 0.2em 0.5em;
+}
+
+#send-contact-form-btn {
+  display: grid;
+  justify-content: center;
+  align-content: center;
+  margin: 0 auto;
+  margin-bottom: 2rem;
+  border-radius: 3px;
+}
+/* Styling placeholders to help with visualisation */
+::placeholder {
+  color: #000;
+  font-style: italic;
+}
+
+@media screen and (min-width: 200px) and (max-width: 640px) {
+  /* Make sure to display touch target in an easy way for mobile users - So they can easily touch the button they want withh enough space between buttons */
+  h1.contact-title {
+    height: 2rem;
+  }
+  #contact-form {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    width: 80%;
+    height: 20%;
+    }
+    /* Resize images with mobile layout */
+  textarea#message {
+    height: 5rem;
+    width: 90%;
+    }
+    div.email-label-input {
+      width: 100%;
+    }
+  }

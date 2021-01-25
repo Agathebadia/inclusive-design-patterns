@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+  <head>
+    <meta charset="utf-8">
+
+    <!--viewport declaration to not disable zooming/pinch to zoom in-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--Load a font css-->
+    <link rel="stylesheet" href="fonts.css" media="none" onload="if(media!='all')media='all'">
+    <noscript>
+      <link rel="stylesheet" href="fonts.css">
+    </noscript>
+
+    <!--Load a main css for styling-->
+    <link rel="stylesheet" href="main.css" media="none" onload="if(media!='all')media='all'">
+    <noscript>
+      <link rel="stylesheet" href="main.css">
+    </noscript>
+
+    <!--Insert inclusive font, Serifs tend to differenciate characters, which is beneficial for dislexic -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;600;900&display=swap" rel="stylesheet"
+      type="text/css">
+  </head>
+
+<html lang="en">
+  <body>
+    <main id="main-contact">
+      <form action="https://formspree.io/f/meqpnvgp" method="POST">
+        <h1 class="contact-title">Contact me!</h1>
+        <div id="contact-form" ">
+          <div class="email-label-input">
+            <label for="email">Your email address: </label>
+            <input type="text" id="email" name="email" required="true" placeholder="gandalf@wizard.com">
+          </div>
+          <div class="message-label-input">
+            <label for="message">Get in touch:</label>
+            <textarea type="text" id="message" name="message" required="true" minlength="50"></textarea>
+          </div>
+        </div>
+        <button id="send-contact-form-btn" type="submit">Send</button>
+      </form>
+    </main>
+  </body>
+</html>
