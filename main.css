@@ -155,9 +155,10 @@ a:focus {
 #main-contact {
   margin: 0 auto;
 }
-/*  */
+
 form {
   border: #c8f7c5 2px solid;
+
 }
 h1.contact-title {
   margin: 0 auto;
@@ -193,6 +194,7 @@ button {
   justify-content: center;
   align-content: center;
   margin: 0 auto;
+  margin-top: 1rem;
   margin-bottom: 2rem;
   border-radius: 3px;
 }
@@ -204,7 +206,11 @@ button {
 
 @media screen and (min-width: 200px) and (max-width: 640px) {
   /* Make sure to display touch target in an easy way for mobile users - So they can easily touch the button they want withh enough space between buttons */
+  form {
+    height: 97vh;
+  }
   h1.contact-title {
+    font-size: 150%;
     height: 2rem;
   }
   #contact-form {
@@ -212,6 +218,7 @@ button {
     grid-template-rows: 1fr 1fr;
     width: 80%;
     height: 20%;
+    padding-top: 1em;
     }
     /* Resize images with mobile layout */
   textarea#message {
@@ -220,5 +227,9 @@ button {
     }
     div.email-label-input {
       width: 100%;
+      margin: auto;
+    }
+    main * + *:not(p) {
+      margin: 1rem 0;
     }
   }
