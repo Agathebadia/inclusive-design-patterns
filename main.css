@@ -116,7 +116,7 @@ p {
 }
 
 /* link underlines - Underline should not intersect the form, it needs to leave the space for readability */
-.media-link, .skip-to-main {
+.media-link {
   color: #c8f7c5;
   text-decoration: none;
   text-shadow: 0.05em 0 0#0e3041, -0.05em 0 0 #0e3041,
@@ -127,6 +127,29 @@ p {
   background-repeat: repeat-x;
   background-size: 100% 0.05em;
   background-image: linear-gradient(to right, currentColor 0%, currentColor 100%);
+}
+
+.skip-to-main a {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+.skip-to-main a:focus {
+  position: static;
+  width: auto;
+  height: auto;
+  color: #c8f7c5;
+  background-color:#0e3041;
+  color: 2px solid #c8f7c5;
+  transform: scale(1.2);
+  text-shadow: none;
+  margin: 0.8em;
+  padding: 0.5em;
+  border: 2px solid #c8f7c5;
 }
 
 a {
