@@ -214,10 +214,6 @@ h1.page-title, div.page-title {
   width: 50%;
 }
 
-.remove-margin {
-  margin: 0 !important;
-}
-
 #contact-form {
   grid-template-rows: 1fr 1fr;
   width: 50%;
