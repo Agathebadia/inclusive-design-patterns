@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+  <head>
+    <meta charset="utf-8">
+
+    <!--viewport declaration to not disable zooming/pinch to zoom in-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="inclusive, blog post, blog, agathe, badia, accessibility, a11y, about">
+    <meta name="description" content="About page on Agathe's Blog">
+    <meta name="author" content="Agathe Badia">
+
+    <!--Load a font css-->
+    <link rel="stylesheet" href="fonts.css" media="none" onload="if(media!='all')media='all'">
+    <noscript>
+      <link rel="stylesheet" href="fonts.css">
+    </noscript>
+
+    <!--Load a main css for styling-->
+    <link rel="stylesheet" href="main.css" media="none" onload="if(media!='all')media='all'">
+    <noscript>
+      <link rel="stylesheet" href="main.css">
+    </noscript>
+
+    <!--Insert inclusive font, Serifs tend to differenciate characters, which is beneficial for dislexic -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;600;900&display=swap" rel="stylesheet"
+      type="text/css">
+  </head>
+
+  <html lang="en">
+    <body>
+      <div class="skip-to-main">
+        <a href="#main">
+          Skip to main content
+        </a>
+      </div>
+      <nav>
+        <a href="index.html" class="navigation-link">Home</a>
+        <a href="index.html#main" class="navigation-link">Blog</a>
+        <a href="about.html" class="navigation-link"><span class="visually-hidden">Current
+          page</span>About</a>
+        <a href="contact.html" target="_top" class="navigation-link">Contact</a>
+      </nav>
+      <main id="main" class="border-outline">
+        <div class="page-title">
+          <h1>Agathe Badia</h1>
+          <p>Frontend Developer</p>
+        </div>
+        <div class="about-description">
+          <div class="about-details">
+            <p>I am a Junior Developer with a background in tech recruiting. After three years in the HR field and talking with many
+            passionate developers, I decided to become one!</p>
+            <p>Accessibility is an important topic for me. I'm still learning a lot every day, and I hope to create more accessible websites in the future!</p>
+          </div>
+          <div class="social-medial">
+            <p><a href="https://agathe-badia.netlify.app/" target="_blank" rel="noopener">Portfolio
+            </a></p>
+            <p><a href="https://github.com/Agathebadia"target="_blank" rel="noopener">Github Profile</a></p>
+            <p><a href="https://twitter.com/Agathe_BADIA" target="_blank" rel="noopener">Twitter</a></p>
+          </div>
+          <picture>
+            <source media="(min-width: 100px;)" srcset="profile-picture.png">
+            <img id="profile-picture" src="purple-profile.png"
+            data-src="profile-picture.png"
+            alt="Portrait of Agathe Badia smiling, on a pink background"
+              width="50">
+          </picture>
+        </div>
+      </main>
+    </body>
+  </html>

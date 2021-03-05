@@ -61,6 +61,10 @@ img {
   width: 50vw;
   }
 
+img#profile-picture {
+  width: 20vw;
+}
+
 @media screen and (min-width: 200px) and (max-width: 640px) {
   /* Make sure to display touch target in an easy way for mobile users - So they can easily touch the button they want withh enough space between buttons */
   nav {
@@ -184,15 +188,36 @@ a:focus {
   margin: 0 auto;
 }
 
-form {
+.border-outline {
   border: #c8f7c5 2px solid;
-
+  margin: 0 auto;
 }
-h1.contact-title {
+
+main#main.border-outline, form.border-outline {
+  margin-top: 1em;
+}
+
+.about-description {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 0;
+}
+
+.about-details {
+  max-width: 30rem;
+}
+
+h1.page-title, div.page-title {
   margin: 0 auto;
   margin-top: 2rem;
   width: 50%;
 }
+
+.remove-margin {
+  margin: 0 !important;
+}
+
 #contact-form {
   grid-template-rows: 1fr 1fr;
   width: 50%;
